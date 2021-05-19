@@ -25,5 +25,15 @@ cElem.strokeRect(300,300,150,150); //border like rect eith it
 
 //clearrect to clear a rectangle
 
-cElem.clearRect(280,30,180,180)
+cElem.clearRect(280,30,180,180);
+
+
+
+cElem.font="50px Arial"
+cElem.fillStyle = "green"
+cElem.fillText("hello harsh",500,150);
+
+
+
+
 
