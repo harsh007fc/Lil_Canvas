@@ -20,5 +20,10 @@ cElem.fillRect(270,20,200,200);
 
 
 cElem.fillStyle = "coral" //color for rectangualr border
-cElem.strokeRect(300,300,150,150);
+cElem.strokeRect(300,300,150,150); //border like rect eith it
+
+
+//clearrect to clear a rectangle
+
+cElem.clearRect(280,30,180,180)
 
