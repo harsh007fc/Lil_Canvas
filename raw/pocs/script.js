@@ -47,14 +47,65 @@ let cElem = canvas.getContext("2d");  //to instantialte canvas context
 
 // PATHS
 
+// cElem.beginPath();
+// cElem.moveTo(50,50);
+// cElem.lineTo(200,50);
+// cElem.lineTo(125,150);
+// // cElem.lineTo(50,50);//also use closepath
+// cElem.closePath(); //it has same efect as abocve line
+// cElem.fillStyle = "red";
+// cElem.fill();
+// cElem.stroke();
+
+
+// cElem.beginPath();
+// cElem.moveTo(250,50);
+// cElem.lineTo(400,50);
+// cElem.lineTo(325,150);
+// // cElem.lineTo(50,50);//also use closepath
+// cElem.closePath(); //it has same efect as abocve line
+// cElem.fillStyle = "green";
+// cElem.fill();
+// cElem.stroke();
+
+
+// cElem.beginPath();
+// cElem.moveTo(450,50);
+// cElem.lineTo(600,50);
+// cElem.lineTo(525,150);
+// // cElem.lineTo(50,50);//also use closepath
+// cElem.closePath(); //it has same efect as abocve line
+// cElem.fillStyle = "yellow";
+// cElem.fill();
+// cElem.stroke();
+
+
+// now lets make a smiley
+let centerX = canvas.width/2;
+let centerY = canvas.height/2;
+cElem.lineWidth = 10;
 cElem.beginPath();
-cElem.moveTo(50,50);
-cElem.lineTo(200,50);
-cElem.lineTo(125,150);
-// cElem.lineTo(50,50);//also use closepath
-cElem.closePath(); //it has same efect as abocve line
-cElem.fillStyle = "red";
-cElem.fill();
+cElem.fillStyle = "blue"
+cElem.arc(centerX,centerY,200,0,Math.PI * 2);
+
+// moto for mouth
+cElem.moveTo(centerX + 150,centerY);
+
+// drawing mouth
+cElem.arc(centerX,centerY,150,0,Math.PI ,false);
+
+
+// move to left eye
+cElem.moveTo(centerX - 70,centerY - 100);
+
+// draw the left eye
+cElem.arc(centerX - 100,centerY - 100,30,0,Math.PI *2);
+
+// move to center
+cElem.moveTo(centerX + 130,centerY - 100);
+
+
+cElem.arc(centerX + 100,centerY - 100,30,0,Math.PI *2);
+
 cElem.stroke();
-
-
+// cElem.fill();
